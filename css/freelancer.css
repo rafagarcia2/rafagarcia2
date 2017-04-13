@@ -40,7 +40,7 @@ hr.star-primary {
   margin: 25px auto 30px;
 }
 hr.star-light:after,
-hr.star-primary:after {
+/*hr.star-primary:after {
   content: "\f005";
   font-family: FontAwesome;
   display: inline-block;
@@ -48,13 +48,13 @@ hr.star-primary:after {
   top: -0.8em;
   font-size: 2em;
   padding: 0 0.25em;
-}
+}*/
 hr.star-light {
   border-color: white;
 }
 hr.star-light:after {
-  background-color: #18BC9C;
-  color: white;
+  /*background-color: #18BC9C;*/
+  /*color: white;*/
 }
 hr.star-primary {
   border-color: #2C3E50;
@@ -68,7 +68,8 @@ hr.star-primary:after {
 }
 header {
   text-align: center;
-  background: #18BC9C;
+  /*background: #18BC9C;*/
+  background-image: url('../img/computer_wallpaper.jpg');
   color: white;
 }
 header .container {
@@ -181,8 +182,10 @@ section h2 {
   font-size: 3em;
 }
 section.success {
-  background: #18BC9C;
+  /*background: #18BC9C;*/
+  background-image: url('../img/features-bg.png');
   color: white;
+  margin: 20px;
 }
 @media (max-width: 767px) {
   section {
@@ -192,9 +195,68 @@ section.success {
     padding-top: 75px;
   }
 }
+section#contact {
+  background-color: #222222;
+  background-image: url('../img/map-image.png');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+section#contact .section-heading {
+  color: white;
+}
+section#contact .form-group {
+  margin-bottom: 25px;
+}
+section#contact .form-group input,
+section#contact .form-group textarea {
+  padding: 20px;
+}
+section#contact .form-group input.form-control {
+  height: auto;
+}
+section#contact .form-group textarea.form-control {
+  height: 236px;
+}
+section#contact .form-control:focus {
+  border-color: #fed136;
+  box-shadow: none;
+}
+section#contact ::-webkit-input-placeholder {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #eeeeee;
+}
+section#contact :-moz-placeholder {
+  /* Firefox 18- */
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #eeeeee;
+}
+section#contact ::-moz-placeholder {
+  /* Firefox 19+ */
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #eeeeee;
+}
+section#contact :-ms-input-placeholder {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #eeeeee;
+}
+section#contact .text-danger {
+  color: #e74c3c;
+}
 #portfolio .portfolio-item {
   margin: 0 0 15px;
   right: 0;
+}
+#portfolio .portfolio-item img {
+  border-style: groove;
+  border-width: 0.3px;
 }
 #portfolio .portfolio-item .portfolio-link {
   display: block;
@@ -327,6 +389,17 @@ footer .footer-below {
   background-color: #2C3E50;
   border-color: #2C3E50;
   font-weight: 700;
+}
+.btn-xl {
+  color: white;
+  background-color: #18BC9C;
+  border-color: #18BC9C;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 3px;
+  font-size: 18px;
+  padding: 20px 40px;
 }
 .btn-primary:hover,
 .btn-primary:focus,
