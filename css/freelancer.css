@@ -351,6 +351,54 @@ section#contact .text-danger {
 form .row:first-child .floating-label-form-group {
   border-top: 1px solid #eeeeee;
 }
+
+.banner {
+    padding: 100px 0;
+    color: #f8f8f8;
+    background: url(../img/banner-bg.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.banner h2 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 3em;
+}
+
+.banner ul {
+    margin-bottom: 0;
+}
+
+.banner-social-buttons {
+    float: right;
+    margin-top: 0;
+}
+
+@media(max-width:1199px) {
+    ul.banner-social-buttons {
+        float: left;
+        margin-top: 15px;
+    }
+}
+
+@media(max-width:767px) {
+    .banner h2 {
+        margin: 0;
+        text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+        font-size: 3em;
+    }
+
+    ul.banner-social-buttons > li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.banner-social-buttons > li:last-child {
+        margin-bottom: 0;
+    }
+}
+
 footer {
   color: white;
 }
@@ -474,6 +522,10 @@ fieldset[disabled] .btn-success:active,
 fieldset[disabled] .btn-success.active {
   background-color: #18BC9C;
   border-color: #18BC9C;
+}
+#p-success {
+  text-align: justify;
+  text-indent: 50px;
 }
 .btn-success .badge {
   color: #18BC9C;
